@@ -1,0 +1,28 @@
+services:
+  node:
+    build:
+      context: node
+    container_name: node-app
+    volumes:
+      - ./node:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - "3000:3000"
+    networks:
+      - node_network
+    restart: always
+
+  nginx:
+    build:
+      context: node
+    container_name: nginx
+    ports:
+      - 8080:80
+    networks:
+      - node_network
+    restart: always
+    depends_on:
+      - node
+
+networks:
+  node_network:
