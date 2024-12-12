@@ -4,9 +4,9 @@
 
 O Objetivo deste desafio é subir 3 containers onde:
 
-* O nginx irá "conversar com a aplicação nodejs;
-* Quando a aplicação node iniciar, será inserido na base de dados um nome;
-* No momento de acessar a aplicação, será apresentada a frase "" e um datatable com o nome que foi inserido na base de dados;
+* O nginx irá "conversar" com a aplicação nodejs;
+* Quando a aplicação node iniciar, será inserido na base de dados um nome na tabela people;
+* No momento de acessar a aplicação, será apresentada a frase "Full Cycle Rocks!" e uma tabela com o nome que foi inserido na base de dados;
 
 # Procedimento para iniciar a aplicação
 
@@ -19,3 +19,6 @@ docker-compose up -d
 ```
 http://localhost:8080/
 ```
+
+**3 - Resultado esperado após subir a aplicação**
+![](https://github.com/rodrigodittrich/docker_nginx_node_mysql/blob/main/images/resultado-nginx-node-mysql.png)
