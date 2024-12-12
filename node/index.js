@@ -50,7 +50,7 @@ app.get('/', (req, res) => {
 
         let html = `
             <h1>Full Cycle Rocks!</h1>
-            <table border="1">
+            <table border="1" width="100%">
                 <tr>
                     <th>ID</th>
                     <th>Nome</th>
